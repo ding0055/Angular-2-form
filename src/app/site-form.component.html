@@ -1,31 +1,51 @@
 <div class="container">
-    <h1>网站表单</h1>
-    <form>
+  <div  [hidden]="submitted">
+    <h1>Site-Form</h1>
+    <form *ngIf="active" (ngSubmit)="onSubmit()" #siteForm="ngForm">
       {{diagnostic}}
       <div class="form-group">
-        <label for="name">网站名</label>
+        <label for="name">Site Name</label>
           <input type="text" class="form-control" id="name"
                required
                [(ngModel)]="model.name" name="name"
                #name="ngModel" >
         <div [hidden]="name.valid || name.pristine" 
              class="alert alert-danger">
-          网站名是必需的
+          Site name is necessary!
         </div>
       </div>
       <div class="form-group">
-        <label for="alexa">alexa 排名</label>
+        <label for="alexa">alexa ranking</label>
          <input type="text"  class="form-control" id="alexa"
          [(ngModel)]="model.alexa" name="alexa">
       </div>
       <div class="form-group">
-        <label for="url">网站 URL </label>
+        <label for="url">Website URL </label>
         <select class="form-control"  id="url"
                 required
                 [(ngModel)]="model.url" name="url">
           <option *ngFor="let p of urls" [value]="p">{{p}}</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-default">提交</button>
+      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="button" class="btn btn-default" (click)="newSite()">Add Website</button>
     </form>
+</div>
+<div [hidden]="!submitted">
+    <h2>Submit Information:</h2>
+    <div class="row">
+      <div class="col-xs-3">Website Name</div>
+      <div class="col-xs-9  pull-left">{{ model.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Website alexa ranking</div>
+      <div class="col-xs-9 pull-left">{{ model.alexa }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Website URL </div>
+      <div class="col-xs-9 pull-left">{{ model.url }}</div>
+    </div>
+    <br>
+    <button class="btn btn-default" (click)="submitted=false">Edit</button>
+  </div>
 </div>
