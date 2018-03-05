@@ -1,27 +1,7 @@
 # FormApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+![qq 20180304212643](https://user-images.githubusercontent.com/14218861/37004072-3abed6b0-209d-11e8-8597-ed9587b2fedc.jpg)
 
-## Development server
+![qq 20180304212653](https://user-images.githubusercontent.com/14218861/37004074-3ad14570-209d-11e8-995b-3e558df19437.jpg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![qq 20180304212708](https://user-images.githubusercontent.com/14218861/37004075-3adec092-209d-11e8-9a25-9216bf0d8221.jpg)
